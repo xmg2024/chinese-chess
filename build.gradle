@@ -4,6 +4,10 @@ plugins {
     id 'com.android.library' version '8.0.0' apply false
 }
 
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
 android {
     namespace 'com.example.chinesechess'
     compileSdk 34
