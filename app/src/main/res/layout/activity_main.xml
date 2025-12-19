@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中国象棋"
+        android:textSize="32sp"
+        android:layout_marginBottom="32dp" />
+
+    <com.example.chinesechess.ChessBoard
+        android:id="@+id/chess_board"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="16dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+
+        <Button
+            android:id="@+id/start_game_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始游戏"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/puzzle_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="残局挑战" />
+
+    </LinearLayout>
+
+</LinearLayout>
